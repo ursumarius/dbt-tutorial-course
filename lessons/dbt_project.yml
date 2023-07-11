@@ -33,4 +33,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   lessons:
-    +materialized: table
+    +materialized: table # default all sql models to be materialized as tables
+    +persist_docs: # writes all of our column descriptions in big query
+      relation: true
+      columns: true
