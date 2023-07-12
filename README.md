@@ -1,6 +1,8 @@
 # dbt-tutorial-course
 
-Welcome to my course!
+This is a fork that helps me learn dbt on Udemy.
+
+The following is written by Jack for his course:
 
 This repository (repo) contains the structure you'll need to get started on the dbt course ([link here](https://www.udemy.com/course/mastering-dbt-data-build-tool-bootcamp/?referralCode=FFF494163B7B9E5E846F)).
 
