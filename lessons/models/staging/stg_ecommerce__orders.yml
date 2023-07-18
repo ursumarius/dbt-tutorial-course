@@ -5,10 +5,9 @@ models:
     columns:
       - name: order_id
         tests:
-          - not_null:
-              severity: error
-          - unique:
-              severity: error
+          -primary_key:
+            severity: error
+
 
       - name: user_id
         tests:
@@ -67,3 +66,4 @@ models:
           - not_null
           - dbt_expectations.expect_column_values_to_be_between:
               min_value: 0
+          #another way of saying that more than 0 (using expression is true)
