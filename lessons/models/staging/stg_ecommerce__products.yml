@@ -28,7 +28,7 @@ models:
               # name is useful for file naming in tests compiled and in the log of the test function
               expression: ">= cost"
               config:
-                where: "retail_price_ IS NOT NULL"
+                where: "retail_price IS NOT NULL"
                 # really don't need to check for NULL because error won't return true either way due to how the negation is framed when compiled
 
       - name: department
