@@ -1,4 +1,7 @@
 
+{# This config is optional, as we've already set the default severity to warn #}
+{{ config(severity='warn') }}
+
 /*
     Checks that, for any order, that the number of line items in the order_items table
 	matches the num_items_ordered column in the orders table.
